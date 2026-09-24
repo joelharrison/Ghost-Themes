@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" width="420" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">Via Piccola Trattoria</title>
+  <desc id="desc">Via Piccola Trattoria logo: double-circle alley scene with a large transparent wine glass breaking the frame in the foreground and a small street lamp in the background.</desc>
+
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="205" cy="190" r="155"/>
+    </clipPath>
+    <clipPath id="glassBowlClip">
+      <!-- Matches large glass bowl transform -->
+      <path transform="translate(300,118) scale(2.55)"
+            d="M-26 -6 C-26 30, -15 52, 0 60 C15 52, 26 30, 26 -6 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="420" height="560" fill="#ffffff"/>
+
+  <!-- Double ring drawn as arcs with gaps where the glass breaks through (right/bottom-right) -->
+  <!-- Outer ring: gap roughly from 20deg to 95deg (CSS angles differ; SVG arcs use endpoint math) -->
+  <path d="M205 35
+           A155 155 0 1 0 348 280"
+        fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+  <path d="M355 245
+           A155 155 0 0 0 320 60"
+        fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Inner ring with matching gaps -->
+  <path d="M205 45
+           A145 145 0 1 0 340 272"
+        fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+  <path d="M346 238
+           A145 145 0 0 0 315 70"
+        fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Alley scene -->
+  <g clip-path="url(#circleClip)" fill="none" stroke="#111111" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left building block -->
+    <path d="M48 245 L48 118 L125 78 L125 248"/>
+    <path d="M48 118 L28 145"/>
+    <!-- Window -->
+    <rect x="70" y="130" width="26" height="32"/>
+    <path d="M83 130 V162 M70 146 H96"/>
+    <!-- Striped awning -->
+    <path d="M62 168 H120 L114 183 H68 Z"/>
+    <path d="M70 168 V183 M78 168 V183 M86 168 V183 M94 168 V183 M102 168 V183 M110 168 V183"/>
+
+    <!-- Distant facade -->
+    <path d="M238 118 H275 V155 H238 Z"/>
+    <path d="M245 126 H255 V136 H245 Z M260 126 H268 V136 H260 Z"/>
+
+    <!-- Roof / wall perspective -->
+    <path d="M48 245 L122 88 L288 88 L362 240"/>
+
+    <!-- Cobblestone path vanishing into distance -->
+    <path d="M82 322 C118 275, 142 220, 165 165 C185 130, 210 105, 240 92"/>
+    <path d="M118 328 C145 275, 166 225, 188 175 C206 140, 230 112, 256 100"/>
+    <path d="M155 332 C175 280, 192 230, 210 188 C228 145, 250 120, 274 108"/>
+
+    <!-- Cobble hashes -->
+    <path d="M98 298 q8 -3 16 0"/><path d="M118 282 q7 -3 14 0"/>
+    <path d="M138 266 q7 -3 14 0"/><path d="M158 248 q6 -2 12 0"/>
+    <path d="M176 230 q6 -2 12 0"/><path d="M192 210 q5 -2 10 0"/>
+    <path d="M208 190 q5 -2 10 0"/><path d="M224 170 q4 -2 8 0"/>
+    <path d="M132 302 q8 -3 16 0"/><path d="M152 284 q7 -2 14 0"/>
+    <path d="M172 264 q6 -2 12 0"/><path d="M192 244 q6 -2 12 0"/>
+    <path d="M210 224 q5 -2 10 0"/><path d="M228 204 q4 -2 8 0"/>
+    <path d="M242 245 q5 -2 10 0"/><path d="M256 230 q5 -2 10 0"/>
+    <path d="M270 215 q4 -2 8 0"/>
+
+    <!-- Small background street lamp (line-art, mid-distance, fully inside) -->
+    <g transform="translate(172,128) scale(0.62)">
+      <path d="M0 78 V8"/>
+      <path d="M-5 78 H5"/>
+      <path d="M-3 73 H3"/>
+      <path d="M0 8 C0 0, 8 -3, 14 1"/>
+      <path d="M14 1 V12"/>
+      <path d="M9 12 H19"/>
+      <path d="M10 12 L8 24 H20 L18 12 Z"/>
+      <path d="M14 1 V-2"/>
+      <circle cx="14" cy="-3" r="1.5" fill="#111111" stroke="none"/>
+    </g>
+
+    <!-- Bicycle with basket -->
+    <g transform="translate(86,198)">
+      <circle cx="10" cy="18" r="7.2"/>
+      <circle cx="33" cy="18" r="7.2"/>
+      <path d="M10 18 L19 6 H29 L33 18 M19 6 L25 18 M25 18 H10"/>
+      <path d="M29 6 H39 V12.5 H29 Z"/>
+      <path d="M31 6 V12.5 M34 6 V12.5 M37 6 V12.5"/>
+    </g>
+
+    <!-- Cafe table + cloth -->
+    <ellipse cx="288" cy="285" rx="76" ry="17"/>
+    <path d="M215 285 C222 312, 238 332, 252 342"/>
+    <path d="M360 285 C350 312, 334 330, 320 340"/>
+    <path d="M245 298 C260 324, 278 332, 292 332 C308 332, 324 322, 338 300"/>
+
+    <!-- Bread plate -->
+    <g transform="translate(318,258)">
+      <ellipse cx="0" cy="14" rx="22" ry="7.5"/>
+      <path d="M-13 8 C-4 -3, 6 -3, 14 8"/>
+      <path d="M-7 4 Q1 -1 7 6"/>
+      <path d="M0 2 Q6 -1 9 6"/>
+    </g>
+  </g>
+
+  <!-- Scene lines continuing through the transparent glass bowl -->
+  <g clip-path="url(#glassBowlClip)" fill="none" stroke="#111111" stroke-width="1.35" stroke-linecap="round" opacity="0.88">
+    <path d="M250 175 C278 158, 308 142, 338 128"/>
+    <path d="M258 205 C288 182, 316 162, 348 146"/>
+    <path d="M270 232 C298 205, 326 182, 358 164"/>
+    <path d="M278 162 q8 -3 16 0"/>
+    <path d="M295 182 q7 -2 14 0"/>
+    <path d="M312 200 q6 -2 12 0"/>
+    <path d="M288 215 q6 -2 12 0"/>
+    <path d="M268 190 q6 -2 12 0"/>
+    <path d="M305 225 q5 -2 10 0"/>
+  </g>
+
+  <!-- Large transparent wine glass in foreground (breaks circle) -->
+  <g transform="translate(300,118) scale(2.55)" fill="none" stroke="#111111" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Empty bowl outline only -->
+    <path d="M-26 -6 C-26 30, -15 52, 0 60 C15 52, 26 30, 26 -6 Z"/>
+    <ellipse cx="0" cy="-6" rx="26" ry="6.5"/>
+    <ellipse cx="0" cy="-4.5" rx="21" ry="4.8" stroke-width="1" opacity="0.4"/>
+    <!-- Stem -->
+    <path d="M0 60 V100"/>
+    <!-- Foot extends outside circle -->
+    <path d="M-20 112 C-11 100, 11 100, 20 112"/>
+    <ellipse cx="0" cy="112" rx="22" ry="4.8"/>
+    <!-- Soft highlight curve -->
+    <path d="M-15 5 C-17 18, -11 32, -2 40" stroke-width="1" opacity="0.55"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="210" y="440" text-anchor="middle" fill="#111111"
+        font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif"
+        font-size="36" font-weight="700">Via Piccola</text>
+  <text x="210" y="486" text-anchor="middle" fill="#111111"
+        font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif"
+        font-size="34" font-weight="700">Trattoria</text>
+</svg>
